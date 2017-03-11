@@ -1,0 +1,59 @@
+<!--Becerra Casillas Efraín Alejandro-->
+<!--Rodríguez Hernández José Antonio-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 >
+        <ion-input placeholder="Resultado" [(ngModel)] = "c3" > </ion-input>
+          
+        </ion-col> 
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 >
+        <ion-input placeholder="Cantidad 1" [(ngModel)] = "c1" text-center>
+
+      </ion-input>
+      </ion-col>
+      <ion-col col-4>
+        <ion-label text-center >
+          op
+        </ion-label>
+      </ion-col>
+      <ion-col col-4>
+        <ion-input placeholder="Cantidad 2" [(ngModel)] = "c2" text-center>
+        
+      </ion-input>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-6><button ion-button full (click)="suma()">+</button></ion-col>
+      <ion-col col-6><button ion-button full (click)="resta()">-</button></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6><button ion-button full (click)="division()">/</button></ion-col>
+      <ion-col col-6><button ion-button full (click)="multiplicacion()">*</button></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12><button ion-button full (click)="modulo()">%</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-label>
+        Equipo: <br>Becerra Casillas <br>Rodriguez Hernandez
+      </ion-label>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
