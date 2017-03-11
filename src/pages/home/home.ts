@@ -18,7 +18,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     this.c1=this.c2=0;
     this.c3 = "";
-    this.op="op"
+    this.op="operación"
     
   }
 
